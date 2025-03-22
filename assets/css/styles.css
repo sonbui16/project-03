@@ -26,6 +26,23 @@ a {
     text-decoration: none;
 }
 
+.section-heading {
+    color: #10375C;
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -1px;
+}
+
+.section-des {
+    color: #575F66;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.67;
+    width: 468px;
+    margin-top: 18px;
+}
+
 .btn {
     color: #FFF;
     font-size: 1.6rem;
@@ -142,11 +159,13 @@ a {
     font-size: 1.8rem;
     font-weight: 400;
 }
+
 .hero__images {
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
+
 .hero__img {
     width: 330px;
     height: 540px;
@@ -154,11 +173,73 @@ a {
     border-radius: 6px;
     margin-right: -6px;
 }
-.hero__img:last-child{
+
+.hero__img:last-child {
     width: 210px;
     height: 410px;
 }
-.hero__img:first-child{
+
+.hero__img:first-child {
     margin-right: -6px;
     position: relative;
 }
+
+.service {
+    padding: 170px 0;
+}
+
+.section__heading,
+.section__des {
+    text-align: center;
+}
+
+.section__des {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.service__row {
+    display: flex;
+    margin-top: 70px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service__img {
+    width: 570px;
+    height: 570px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.service-item {
+    margin-bottom:  21px;
+    display: flex;
+    width: 470px;
+}
+
+.service-item__heading {
+    color: #10375C;
+    font-size: 1.8rem;
+    font-weight: 600;
+
+}
+
+.service-item__desc {
+    color: #575F66;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.75;
+    margin-top: 8px;
+}
+
+.service__row .btn {
+    margin-top: 55px;
+}
+
+.service-item:hover {
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.05);
+}
+
