@@ -26,6 +26,23 @@ a {
     text-decoration: none;
 }
 
+.btn {
+    color: #FFF;
+    font-size: 1.6rem;
+    font-weight: 400;
+    background-color: #2E80CE;
+    border-radius: 999px;
+    display: inline-block;
+    padding: 15px 20px;
+    min-width: 205px;
+    text-align: center;
+}
+
+.btn:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
 /* Header */
 .header {
     min-height: 100vh;
@@ -43,6 +60,7 @@ a {
     display: flex;
 }
 
+.header-action__login,
 .navbar__link {
     color: #C9D2DA;
     font-size: 1.6rem;
@@ -50,13 +68,18 @@ a {
     padding: 4px 21px;
 }
 
-.navbar__link--active {
+.header-action__login {
+    margin-right: 7px;
+}
+
+.navbar__link:hover,
+.navbar__link--header-action {
     color: #FFF;
     text-shadow: 1px 0 0 currentColor;
 
 }
 
-.navbar__link--active::before {
+.navbar__link--header-action::before {
     content: "";
     width: 6px;
     height: 6px;
@@ -67,4 +90,75 @@ a {
     position: relative;
     left: -8px;
     top: -2px;
+}
+
+.header-action__signup {
+    min-width: 104px;
+    padding: 8px 20px;
+}
+
+/* Hero */
+.hero {
+    margin-top: 76px;
+    display: flex;
+    align-items: center;
+}
+
+.hero__content {
+    width: 44%;
+    flex-shrink: 0;
+}
+
+.hero__heading {
+    color: #FFF;
+    font-size: 7rem;
+    font-weight: 600;
+    line-height: 1.14;
+    letter-spacing: -1.4px;
+}
+
+.hero__desc {
+    color: #C9D2DA;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.67;
+    margin-top: 22px;
+}
+
+.hero__row {
+    margin-top: 38px;
+    display: flex;
+    align-items: center;
+}
+
+.hero__media {
+    flex-grow: 1;
+}
+
+.hero__phone {
+    margin-left: 38px;
+    color: #FFF;
+    line-height: 1.67;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+.hero__images {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.hero__img {
+    width: 330px;
+    height: 540px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-right: -6px;
+}
+.hero__img:last-child{
+    width: 210px;
+    height: 410px;
+}
+.hero__img:first-child{
+    margin-right: -6px;
+    position: relative;
 }
